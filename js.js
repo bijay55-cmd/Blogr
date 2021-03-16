@@ -1,19 +1,10 @@
-const burger = document.querySelector('.burger');
-const closeburger = document.querySelector('.closeburger');
 const navul = document.querySelector('.navul');
 
+function myFunction(x) {
+  navul.classList.toggle('show');
+  x.classList.toggle("change");
+}
 
-burger.addEventListener('click', () => {
-navul.classList.toggle('show');
-burger.style.display ="none";
-closeburger.style.display="block";
-});
-
-closeburger.addEventListener('click', () => {
-navul.classList.remove('show');
-closeburger.style.display="none"
-burger.style.display="block";
-});
 
 
 //mobile dropdown options
