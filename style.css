@@ -16,13 +16,13 @@ border-radius: 0 0 0 100px;
 .head::after{
     content:'';
     background-image:url('./images/bg-pattern-intro.svg');
-    background-size: 800px;
+    background-size: cover;
     position: absolute;
-    height: 520px;
+    height: 100%;
     width: 100%;
-    top:-100px;
+    top:-50px;
     left:0;
-    background-position: -120px -50px;
+    background-position: -160px -90px;
     z-index:-1;
 }
 img{
