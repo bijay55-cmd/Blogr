@@ -225,18 +225,19 @@ footer ul li{
         color:black;
     }
     .head::after{
-        height: 500px;
-        width: 80%;
-        transform: translateY(20px);
-        background-size:cover;
+       height: 420px;
+        width: 100%;
+        top:0;
+        left:20px;
+        background-position: center;
+        background-size:1000px;
     }
 }
 @media screen and (min-width:1020px){  
     .head::after{
-        height: 500px;
-        width: 80%;
-        transform: translateY(20px);
-        background-size:cover;
+        height: 420px;
+        width: 100%;
+        background-size:1500px;
     }
     .dropdowncontent2{
         display:none;
@@ -315,9 +316,9 @@ footer ul li{
 }
 @media screen and (min-width:1440px){
   .head::after{
-      height: 500px;
+        height: 420px;
       width: 80%;
-      transform: translateY(20px);
+      background-position: 100px;
       background-size:cover;
   }
     .designedflex{
