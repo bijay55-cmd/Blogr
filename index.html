@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js" defer></script>
+    <title>Blogr</title>
+</head>
+<body>
+
+  <section class="head">
+  <nav>
+
+    <div>
+      <img src="./images/logo.svg">
+    </div>
+
+    <div>
+      <img class="burger" src="./images/icon-hamburger.svg">
+      <img class="closeburger" src="./images/icon-close.svg">
+    </div>
+
+  </nav>  
+</section>
+  <div class="navul">
+
+    <ul>
+      <li  class="dropbtn">Product <i  onclick="dropdown()" class="fa fa-angle-down"></i></li>
+      <div class="dropdowncontent" id="mydropdown">
+        <p>Overview</p>
+        <p>Pricing</p>
+        <p>Marketplace</p>
+        <p>Features</p>
+        <p>Integrations</p>
+      </div>
+
+      <li  class="dropbtn">Company <i  onclick="dropdown2()" class="fa fa-angle-down"></i></li>
+      <div class="dropdowncontent" id="mydropdown2">
+        <p>About</p>
+        <p>Team</p>
+        <p>Blog</p>
+        <p>Careers</p>
+      </div>
+
+      <li  class="dropbtn">Connect <i onclick="dropdown3()" class="fa fa-angle-down"></i></li>
+      <div class="dropdowncontent" id="mydropdown3">
+        <p>Contact</p>
+        <p>Newsletter</p>
+        <p>LinkedIn</p>
+      </div>
+    </ul>
+
+    <hr>
+
+    <label>Login</label>
+
+    <br>
+
+    <button>Sign Up</button>
+
+  </div>
+
+<main>
+
+  <div>
+    <img src="./images/logo.svg">
+  </div>
+
+  <div class="desktopul">
+    <ul>
+      <li  class="dropbtn2">Product <i onclick="dropdownA()" class="fa fa-angle-down"></i> </li>
+      <div class="dropdowncontent2 content1" id="mydropdownA">
+        <p>Overview</p>
+        <p>Pricing</p>
+        <p>Marketplace</p>
+        <p>Features</p>
+        <p>Integrations</p>
+      </div>
+
+      <li  class="dropbtn2">Company <i onclick="dropdownB()" class="fa fa-angle-down"></i></li>
+      <div class="dropdowncontent2 content2" id="mydropdownB">
+        <p>About</p>
+        <p>Team</p>
+        <p>Blog</p>
+        <p>Careers</p>
+      </div>
+
+      <li  class="dropbtn2">Connect <i onclick="dropdownC()" class="fa fa-angle-down"></i></li>
+      <div class="dropdowncontent2 content3" id="mydropdownC">
+        <p>Contact</p>
+        <p>Newsletter</p>
+        <p>LinkedIn</p>
+      </div>
+    </ul>
+  </div>
+
+  <div class="right">
+  <div>
+    <p>Login</p>
+  </div>
+
+  <div>
+    <button>Sign Up</button>
+  </div>
+  </div>
+
+
+</main>
+
+<section class="paragraph1">
+
+  <div class="modern">
+    <h1>A modern publishing platform</h1>
+    <p>Grow your audience and build your online brand</p>
+  </div>
+
+  <div>
+    <button class="start">Start for Free</button>
+    <button class="learn">Learn More</button>
+  </div>
+
+</section>
+
+<div class="paragraph2">
+  
+  <div>
+    <h1>Designed for the future</h1>
+  </div>
+
+  <div class="designedflex">
+
+  <div>
+<img class="mobileeditor" src="./images/illustration-editor-mobile.svg">
+<img class="desktopeditor" src="./images/illustration-editor-desktop.svg">
+  </div>
+
+  <div class="designedintro">
+    <h1>Introducing an extensible editor</h1>
+    <p>Blogr features an exceedingly intuitive interface which lets you 
+      focus on one thing: creating content. The editor supports management of multiple 
+      blogs and allows easy manipulation of embeds such as images, videos, and Markdown.
+      Extensibility with plugins and themes provide easy ways to add functionality or change 
+      the looks of a blog.
+    </p>  
+    
+    <h1>Robust content managemet</h1>
+    <p>Flexible content management enables users to easily move through posts.
+      Increase the usability of your blog by adding customized categories, sections, 
+      format, or flow. With this functionality, you're in full control.
+    </p>
+  </div>
+
+  </div>
+
+</div>
+
+<div class="paragraph3">
+  <div class="phoneimg">
+    <img src="./images/illustration-phones.svg">
+  </div>
+
+  <div class="art">
+<h1>State of the Art Infrastructure</h1>
+<p>With realibility and speed in mind, woldwide data centers provide the backbone for 
+  ultra-fast connectivity. This ensures your site will load instantly, no matter where your redears are, keeping 
+  your site competitive.
+</p>
+  </div>
+
+</div>
+
+<section class="paragraph4">
+
+<div>
+  <img class="laptopmobile" src="./images/illustration-laptop-mobile.svg">
+  <img class="laptopdesktop" src="./images/illustration-laptop-desktop.svg">
+</div>
+
+<div class="laptop">
+  <h1>Free,open,simple</h1>
+  <p>Blogr is a free and open source application backed by a large 
+    community of helpful developers. It supports features such as 
+    code syntax highlighting, RSS feeds, social media integration, third-party 
+    commenting tools, and works seamlessly with Google Analytics. The architecture 
+    is clean and is relatively easy to learn.
+  </p>
+  <h1>Powerful tooling</h1>
+  <p>Batteries included. We built a simple and straightforward CLI tool that makes 
+    customization and deployment a breeze, but capable of producing even the most complicated sites.
+  </p>
+</div>
+
+</section>
+
+
+<footer>
+
+  <div>
+    <img src="./images/logo.svg">
+    </div>
+
+    <div class="footerlist"> 
+      <h1>Product</h1>
+
+      <ul>
+        <li>Overview</li>
+        <li>Pricing</li>
+        <li>Marketplace</li>
+        <li>Features</li>
+        <li>Integrations</li>
+      </ul>
+    </div>
+
+    <div class="footerlist">
+      <h1>Company</h1>
+
+      <ul>
+        
+        <li>About</li>
+        <li>Team</li>
+        <li>Blog</li>
+        <li>Careers</li>
+      </ul>
+    </div>
+
+    <div class="footerlist">
+  <h1>Connect</h1>
+      <ul> 
+        <li>Contact</li>
+        <li>Newsletter</li>
+        <li>LinkedIn</li>
+      </ul>
+    </div>
+
+
+</footer>
+
+</body>
+</html>
