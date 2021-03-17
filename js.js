@@ -1,62 +1,51 @@
-const navul = document.querySelector('.navul');
+const box = document.querySelector('.box');
 
 function myFunction(x) {
-  navul.classList.toggle('show');
+  box.classList.toggle('show');
   x.classList.toggle("change");
 }
 
+// Set up the click event on the accordion itself
+// When a panel is clicked, that event will bubble up
+// to the accordion and can be handled there.
+document.querySelector(".accordion").addEventListener("click", function(event){
+
+  // Check to see if the clicked panel was the currently open one.
+  let alreadyActive = event.target.classList.contains("active");
+  
+  // Loop over all the panels an close each one
+  document.querySelectorAll(".panel").forEach(function(panel){
+    panel.style.maxHeight = "0";
+    panel.previousElementSibling.classList.remove("active");
+  });
+
+  // If the clicked panel wasn't the already active one go ahead
+  // and open the clicked panel. Otherwise, do nothing and leave
+  // all the panels closed.
+  if(!alreadyActive){
+    // Then show the clicked panel which is accessible as event.target
+    event.target.classList.add("active");
+    var panel = event.target.nextElementSibling;
+    panel.style.maxHeight = panel.scrollHeight + "px";
+  }
+
+});
+
+//desktop
+document.querySelector(".accordion2").addEventListener("click", function(event){
 
 
-//mobile dropdown options
-function dropdown() {
-  document.getElementById("mydropdown").classList.toggle("show2");
-  document.getElementById('mydropdown2').classList.remove('show2');
-  document.getElementById('mydropdown3').classList.remove('show2');
-}
+  let alreadyActive = event.target.classList.contains("active2");
 
-function dropup(){
-  document.getElementById("mydropdown").classList.toggle("show2");
-  document.getElementById('mydropdown2').classList.remove('show2');
-  document.getElementById('mydropdown3').classList.remove('show2');
-}
+  document.querySelectorAll(".panel2").forEach(function(panel){
+    panel.style.maxHeight = "0";
+    panel.previousElementSibling.classList.remove("active2");
+  });
 
-function dropdown2() {
-  document.getElementById("mydropdown2").classList.toggle("show2");
-  document.getElementById('mydropdown').classList.remove('show2');
-  document.getElementById('mydropdown3').classList.remove('show2');
-}
+  if(!alreadyActive){
+    event.target.classList.add("active2");
+    var panel = event.target.nextElementSibling;
+    panel.style.maxHeight = panel.scrollHeight + "px";
+  }
 
-function dropup2(){
-  document.getElementById("mydropdown2").classList.toggle("show2");
-  document.getElementById('mydropdown').classList.remove('show2');
-  document.getElementById('mydropdown3').classList.remove('show2');
-}
-
-function dropdown3() {
-  document.getElementById("mydropdown3").classList.toggle("show2");
-  document.getElementById('mydropdown2').classList.remove('show2');
-  document.getElementById('mydropdown').classList.remove('show2');
-}
-
-//End of mobile dropdown version
-
-
-//Start with the desktop dropdown
-function dropdownA() {
-  document.getElementById("mydropdownA").classList.toggle("show3");
-  document.getElementById('mydropdownB').classList.remove('show3');
-  document.getElementById('mydropdownC').classList.remove('show3');
-}
-
-function dropdownB() {
-  document.getElementById("mydropdownB").classList.toggle("show3");
-  document.getElementById('mydropdownA').classList.remove('show3');
-  document.getElementById('mydropdownC').classList.remove('show3');
-}
-
-function dropdownC() {
-  document.getElementById("mydropdownC").classList.toggle("show3");
-  document.getElementById('mydropdownB').classList.remove('show3');
-  document.getElementById('mydropdownA').classList.remove('show3');
-}
-
+});
