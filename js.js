@@ -8,7 +8,7 @@ function myFunction(x) {
 // Set up the click event on the accordion itself
 // When a panel is clicked, that event will bubble up
 // to the accordion and can be handled there.
-document.querySelector(".accordion").addEventListener("click", function(event){
+document.querySelector(".dropdown").addEventListener("click", function(event){
 
   // Check to see if the clicked panel was the currently open one.
   let alreadyActive = event.target.classList.contains("active");
@@ -32,7 +32,7 @@ document.querySelector(".accordion").addEventListener("click", function(event){
 });
 
 //desktop
-document.querySelector(".accordion2").addEventListener("click", function(event){
+document.querySelector(".dropdown2").addEventListener("click", function(event){
 
 
   let alreadyActive = event.target.classList.contains("active2");
